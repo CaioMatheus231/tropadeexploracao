@@ -2,8 +2,6 @@ body{
     background-color : blue
 }
 #navbar{
-    font: 70px;
-}
-.div{
+    align-items: center;
     font: 70px;
 }
