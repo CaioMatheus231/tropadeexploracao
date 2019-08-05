@@ -1,7 +1,37 @@
-body{
-    background-color : blue
+#navbar {
+    bottom: 20px;
+    background-color: rgb(4, 40, 160);
 }
-#navbar{
-    align-items: center;
-    font-size: 70px;
+.nav-item {
+    text-align: center;
+    font-family: 'Raleway';
+    transition: all 0.3s ease;
+
+}
+.nav-item:hover {
+    background:#3b3efc;
+    box-shadow:
+                1px 1px #d62222,
+                2px 2px #d62222,
+                3px 3px #d62222;
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+}
+#soucorno{
+    position: relative;
+    margin: 0px 0px 0px 200px;
+
+    color: rgb(255, 255, 255);
+}
+#avatar {
+    position:absolute;
+    margin-left: 80px;
+    transition: all 0.8s ease;
+
+}
+#avatar:hover {
+
+    -webkit-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    transform: rotateZ(30deg);
 }
