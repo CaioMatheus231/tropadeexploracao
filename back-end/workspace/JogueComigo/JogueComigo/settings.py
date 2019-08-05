@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,13 @@ WSGI_APPLICATION = 'JogueComigo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'joguecomigodb.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'db_joguecomigo',
+        'USER': 'django',
+        'PASSWORD': 'sua_senha',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+
     }
 }
 
@@ -105,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
