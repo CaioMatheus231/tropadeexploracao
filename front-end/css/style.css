@@ -1,6 +1,7 @@
 #navbar {
-    bottom: 20px;
-    background-color: rgb(4, 40, 160);
+    position: absolute;
+    top: 50%;
+    background-color: rgb(38, 82, 230);
 }
 .nav-item {
     text-align: center;
@@ -19,7 +20,7 @@
 }
 #soucorno{
     position: relative;
-    margin: 0px 0px 0px 200px;
+    margin: 0px 0px 0px 217px;
 
     color: rgb(255, 255, 255);
 }
