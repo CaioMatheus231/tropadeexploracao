@@ -1,38 +1,5 @@
-#navbar {
+#logo {
     position: absolute;
-    top: 50%;
-    background-color: rgb(38, 82, 230);
-}
-.nav-item {
-    text-align: center;
-    font-family: 'Raleway';
-    transition: all 0.3s ease;
-
-}
-.nav-item:hover {
-    background:#3b3efc;
-    box-shadow:
-                1px 1px #d62222,
-                2px 2px #d62222,
-                3px 3px #d62222;
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
-}
-#soucorno{
-    position: relative;
-    margin: 0px 0px 0px 217px;
-
-    color: rgb(255, 255, 255);
-}
-#avatar {
-    position:absolute;
-    margin-left: 80px;
-    transition: all 0.8s ease;
-
-}
-#avatar:hover {
-
-    -webkit-transform: rotateZ(30deg);
-    -ms-transform: rotateZ(30deg);
-    transform: rotateZ(30deg);
+    left: -5%;   
+    top: 0%;
 }
