@@ -6,10 +6,10 @@ body{
     left: -5%;   
     top: 0%;
 }
-#nav{
-    left: 35%;
-    right: 0%;
+.container-fluid {
+    background-color: rgb(10, 10, 10);
 }
-button{
-    text
+.nav-item{
+    position: relative;
+    left: 100%;
 }
