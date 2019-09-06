@@ -57,3 +57,19 @@ body{
 #corpo p {
     font-family: "Raleway";
 }
+#ale{
+    background-color: red;
+    border: 12 px;
+    border-color: blue;
+}
+.bloco{
+    margin-top: 1%;
+    margin-left: 40%; 
+    width: 30%;
+    height: 20%;
+    color:black;
+    background-color: white;
+}
+#fi{
+   margin-left: 70%;
+}
