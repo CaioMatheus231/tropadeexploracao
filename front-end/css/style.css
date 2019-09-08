@@ -58,9 +58,13 @@ body{
     font-family: "Raleway";
 }
 #ale{
+    text-align: center;
     background-color: red;
     border: 12 px;
     border-color: blue;
+    margin-left:45%;
+    margin-top: 10%;
+    left:50%;
 }
 .bloco{
     margin-top: 1%;
@@ -72,4 +76,54 @@ body{
 }
 #fi{
    margin-left: 70%;
+}
+#ao{
+    margin-right: 70%;
+}
+#home{
+    text-align: center;
+}
+#sa{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-right: 70%;
+}
+#san{
+    text-align: center;
+    background-color: white;
+    margin-right:70%; 
+}
+#ma{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-left: 33%;
+    margin-top: -10.5%;
+    margin-right: 35%;
+}
+#mat{
+    text-align: center;
+    background-color: white;
+    margin-left: 33%;
+    margin-right:35%;
+}
+#an{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-left: 70%;
+    margin-top: -10.5%;
+    margin-right: 1%;
+}
+#and{
+    text-align: center;
+    background-color: white;
+    margin-left: 70%;
+    margin-right:1%;
+}
+.cada{
+    margin-top: 1%;
+    margin-left: 40%; 
+    width: 30%;
+    height: 20%;
+    color:black;
+    background-color: white;
 }
