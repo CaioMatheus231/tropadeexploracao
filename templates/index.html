@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <script src="../static/js/script.js"></script>
+</head>
+<body>
+
+    {% if nome != '' %}
+        <div class="alerta">
+            Contato {{nome}}, telefone {{telefone}} adicionado com sucesso!
+        </div>
+    {% endif %}
+
+    <div class="botao"><a href="/lista">Todos os contatos</a></div> 
+    <div class="botao"><a href="/inserir">Novo contato</a></div> 
+    <div class="botao"><a href="/remover">Excluir um contato</a></div> 
+    <div class="botao"><a href="/buscar">Buscar um contato</a></div> 
+</body>
+</html>
