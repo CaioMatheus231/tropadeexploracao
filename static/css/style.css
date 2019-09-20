@@ -127,3 +127,11 @@ body{
     color:black;
     background-color: white;
 }
+div.botao {
+    border: 1px solid #080280;
+    border-radius: 10px;
+    padding: 5px;
+}
+div.alerta {
+    border: 1px dotted red;
+}

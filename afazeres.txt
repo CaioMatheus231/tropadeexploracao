@@ -1,0 +1,8 @@
+- arrumar o flask do matheus
+- arrumar as rotas
+- arrumar banco de dados
+
+----
+
+deixar mais bonito o aleatorizador
+mexer na página descubra
