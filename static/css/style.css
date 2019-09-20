@@ -1,0 +1,137 @@
+body{
+    background-image: url("img/bg.png");
+    background-size: 25%;
+    padding:0;
+    width: 100%;
+    height:100%;
+    margin:auto;
+}
+#logo {
+    position: relative;  
+    margin: 0%;
+    padding: 0%;
+    max-width:100%;
+	height:auto;
+}
+.container-fluid {
+    background-color: rgb(10, 10, 10);
+}
+.nav-item{
+    position: relative;
+    left: 115%;
+}
+.text1{
+    font-family: "Heebo";
+    position: relative;
+    width: 8.2%;
+    color: rgb(0, 0, 0);
+    border: solid 0.1em rgb(206, 206, 206);
+    margin-top: 1%;
+    margin-left: 45%;
+    background-color: rgb(206, 206, 206);
+}
+.text1 h5 {
+    margin-top: 10%;
+    margin-left: 3%;
+}
+#corpo {
+    position: relative;
+    width: 90%;
+    height: auto; 
+    background-color: white;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 1%;
+} 
+#corpo h2 {
+    font-family: "Open Sans Condensed";
+    text-align: center;
+}
+#corpo hr {
+    background-color: black;
+}
+#corpo p {
+    font-family: "Raleway";
+}
+#ale{
+    text-align: center;
+    background-color: red;
+    border: 12 px;
+    border-color: blue;
+    margin-left:45%;
+    margin-top: 10%;
+    left:50%;
+}
+.bloco{
+    margin-top: 1%;
+    margin-left: 40%; 
+    width: 30%;
+    height: 20%;
+    color:black;
+    background-color: white;
+}
+#fi{
+   margin-left: 70%;
+}
+#ao{
+    margin-right: 70%;
+}
+#home{
+    text-align: center;
+}
+#sa{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-right: 70%;
+}
+#san{
+    text-align: center;
+    background-color: white;
+    margin-right:70%; 
+}
+#ma{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-left: 33%;
+    margin-top: -10.5%;
+    margin-right: 35%;
+}
+#mat{
+    text-align: center;
+    background-color: white;
+    margin-left: 33%;
+    margin-right:35%;
+}
+#an{
+    text-align: center;
+    background-color: antiquewhite;
+    margin-left: 70%;
+    margin-top: -10.5%;
+    margin-right: 1%;
+}
+#and{
+    text-align: center;
+    background-color: white;
+    margin-left: 70%;
+    margin-right:1%;
+}
+.cada{
+    margin-top: 1%;
+    margin-left: 40%; 
+    width: 30%;
+    height: 20%;
+    color:black;
+    background-color: white;
+}
+div.botao {
+    border: 1px solid #080280;
+    border-radius: 10px;
+    padding: 5px;
+}
+div.alerta {
+    border: 1px dotted red;
+}

@@ -11,7 +11,7 @@ db = SQLAlchemy(app)
 class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nome = db.Column(db.String(20), nullable=False)
-    e-mail = db.Column(db.String(45), nullable=False, unique=True)
+    email = db.Column(db.String(45), nullable=False, unique=True)
     foto = db.Column(db.String(45), nullable=False, unique=True)
     jogo_id = db.Column(db.String(45), nullable=False, unique=True)
     status_id = db.Column(db.String(45), nullable=False, unique=True)
@@ -34,20 +34,19 @@ class GamerTag(db.Model):
 @app.route('/')
 def inicio():
     nome = ''
-    e-mail = ''
+    email = ''
     foto = ''
     jogo_id = ''
     status_id = ''
     
     if 'contatoAdicionado-nome' in session:
         nome = session['contatoAdicionado-nome']
-        e-mail = session['contatoAdicionado-e-mail']
+        email = session['contatoAdicionado-e-mail']
         foto = session['contatoAdicionado-foto']
         jogo_id = session['contatoAdicionado-jogo_id']
         status_id = session['contatoAdicionado-status_id']
         del session['contatoAdicionado-nome']
-    return render_template('index.html', nome=nome, e-mail=e-mail, foto=foto, 
-    jogo_id=jogo_id, status_id)
+    return render_template('index.html', nome=nome, email=email, foto=foto, jogo_id=jogo_id, status_id=status_id)
 
 @app.route('/')
 def inicio():
@@ -78,7 +77,7 @@ def inicio():
         usuario_id = session['contatoAdicionado-usuario_id']
         username = session['contatoAdicionado-username']
         del session['contatoAdicionado-nome']
-    return render_template('index.html', jogo_id=jogo_id, usuario_id=usuario_id
+    return render_template('index.html', jogo_id=jogo_id, usuario_id=usuario_id,
     username=username)
 
 @app.route('/inserir')
@@ -89,7 +88,7 @@ def inserir():
 def addcontato():
     u = Usuario()
     u.nome = request.form['nome']
-    u.e-mail = request.form['e-mail']
+    u.email = request.form['e-mail']
     u.foto = request.form['foto']
     u.jogo_id = request.form['jogo_id']
     u.status_id = request.form['status']
@@ -98,7 +97,7 @@ def addcontato():
     db.session.commit()
 
     session['contatoAdicionado-nome'] = u.nome
-    session['contatoAdicionado-e-mail'] = u.e-mail
+    session['contatoAdicionado-e-mail'] = u.email
     session['contatoAdicionado-nome'] = u.foto
     session['contatoAdicionado-telefone'] = u.jogo_id
     session['contatoAdicionado-nome'] = u.status_id
@@ -187,7 +186,7 @@ def buscar():
         if contato is None:
             session['mensagem-busca'] = "Não encontrado"
         else:
-            session['mensagem-busca'] = "{} tem o número {}".format(usuario.nome, usuario.e-mail)
+            session['mensagem-busca'] = "{} tem o número {}".format(usuario.nome, usuario.email)
         
         return render_template('busca.html', msg=session['mensagem-busca'])
 
